@@ -5,11 +5,11 @@ import PeopleContainer from './components/PeopleContainer'
 function App() {
   return (
     <>
-      <div className="bg-green-400">
+      <div>
         <div className="bg-gray-500">
           <Header />
         </div>
-        <div className="bg-red-600">
+        <div>
           <PeopleContainer />
         </div>
 

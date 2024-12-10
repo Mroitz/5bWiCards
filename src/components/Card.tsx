@@ -8,11 +8,12 @@ export default function Card({ imgurl, title, description }: Props) {
 
     return (
         <div className="p-10">
-            <div className="h-80">
+            <div className="h-100%" >
                 <img src={imgurl} alt="name" className="w-full h-full" />
-                {title};
-                {description};
+                <p>{title}</p>
+                <p>{description}</p>
+
             </div>
-        </div>
+        </div >
     )
 }
