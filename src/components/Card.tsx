@@ -1,19 +1,18 @@
 type Props = {
     imgurl: string;
-    title: string;
+    name
+    : string;
     description: string;
 }
 
-export default function Card({ imgurl, title, description }: Props) {
+export default function Card({ imgurl, name, description }: Props) {
 
     return (
-        <div className="p-10">
-            <div className="h-100%" >
-                <img src={imgurl} alt="name" className="w-full h-full" />
-                <p>{title}</p>
-                <p>{description}</p>
+        <div className="m-24 w-">
+            <img src={imgurl} alt="name" className="h-96 w-96" />
+            <p className="font-bold text-3xl">{name}</p>
+            <p>{description}</p>
 
-            </div>
-        </div >
+        </div>
     )
 }
